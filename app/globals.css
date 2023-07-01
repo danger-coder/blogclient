@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body{
+  background-color:#181A2A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.lottie svg{
+  width: 100px !important;
+  height: 100px!important;
+  cursor: pointer;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slick-dots {
+  bottom: 23px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white!important;
+}
+
+.header{
+  /* background: url("https://img.freepik.com/free-vector/dark-pattern-background_1078-81.jpg"); */
+  background: url("https://img.freepik.com/free-vector/blue-diagonal-square-grid-background_1409-1251.jpg");
+  z-index: -1;
+  background-color: #181a2a00; /* Fallback color in case the image fails to load */
+  background-blend-mode: screen;
+
 }
